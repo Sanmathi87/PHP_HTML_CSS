@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2c3e91" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+        </div>
+        <h1>Employee Email ID Generator</h1>
+
+        <form action="generate_email.php" method="POST">
+            <label>First Name *</label>
+            <input type="text" name="first_name" required>
+
+            <label>Last Name *</label>
+            <input type="text" name="last_name" required>
+
+            <label>Department</label>
+            <select name="department">
+                <option value="hr">HR</option>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="sales">Sales</option>
+                <option value="marketing">Marketing</option>
+            </select>
+
+            <label>Company Domain</label>
+            <input type="text" name="domain" value="company.com">
+
+            <button type="submit">Generate Email</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #eef1f7;
+    padding: 40px 15px;
+}
+
+.form-container, .invoice-container {
+    background: white;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a7a4c;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background: #1a7a4c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #145c39;
+}
+
+.invoice-header p {
+    margin-bottom: 5px;
+}
+
+.summary {
+    margin-top: 20px;
+    border-top: 2px dashed #ccc;
+    padding-top: 15px;
+}
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.grand-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1a7a4c;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.thank-you {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+}

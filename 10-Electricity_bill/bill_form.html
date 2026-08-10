@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>⚡ Electricity Bill Calculator</h1>
+
+        <form action="calculate_bill.php" method="POST">
+            <label>Consumer Name *</label>
+            <input type="text" name="consumer_name" required>
+
+            <label>Units Consumed (kWh) *</label>
+            <input type="number" name="units" min="0" step="0.1" required>
+
+            <button type="submit">Calculate Bill</button>
+        </form>
+
+        <div class="slab-info">
+            <h3>Slab Rates</h3>
+            <ul>
+                <li>0 - 100 units: ₹2.50 / unit</li>
+                <li>101 - 200 units: ₹4.00 / unit</li>
+                <li>201 - 400 units: ₹6.00 / unit</li>
+                <li>Above 400 units: ₹8.00 / unit</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

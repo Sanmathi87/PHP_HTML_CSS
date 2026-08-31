@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Banking Login</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>🏦 SecureBank</h1>
+        <p class="subtitle">Online Banking Login</p>
+
+        <?php if (isset($_GET['error'])): ?>
+            <p class="error">Invalid username or password. Please try again.</p>
+        <?php endif; ?>
+
+        <form action="login_process.php" method="POST">
+            <label>Customer ID / Username *</label>
+            <input type="text" name="username" required>
+
+            <label>Password *</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="hint">Demo credentials: <strong>sanmathi</strong> / <strong>Pass@123</strong></p>
+    </div>
+
+</body>
+</html>

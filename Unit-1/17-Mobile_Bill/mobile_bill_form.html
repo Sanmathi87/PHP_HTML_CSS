@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Bill Generator</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📱 Mobile Bill Generator</h1>
+
+        <form action="generate_mobile_bill.php" method="POST">
+            <label>Customer Name *</label>
+            <input type="text" name="customer_name" required>
+
+            <label>Mobile Number *</label>
+            <input type="text" name="mobile" required>
+
+            <label>Tariff Plan *</label>
+            <select name="plan" required>
+                <option value="">-- Select Plan --</option>
+                <option value="Basic">Basic (₹199 - 1GB/day, 100 mins)</option>
+                <option value="Standard">Standard (₹399 - 2GB/day, 300 mins)</option>
+                <option value="Premium">Premium (₹599 - 3GB/day, Unlimited calls)</option>
+            </select>
+
+            <label>Extra Data Used (GB)</label>
+            <input type="number" name="extra_data" min="0" step="0.1" value="0">
+
+            <label>Extra Call Minutes Used</label>
+            <input type="number" name="extra_minutes" min="0" value="0">
+
+            <button type="submit">Generate Bill</button>
+        </form>
+    </div>
+
+</body>
+</html>

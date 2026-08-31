@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Membership Registration</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Library Membership Registration</h1>
+
+        <?php if (isset($_GET['error'])): ?>
+            <p class="error"><?php echo htmlspecialchars($_GET['error']); ?></p>
+        <?php endif; ?>
+
+        <form action="process_membership.php" method="POST">
+            <label>Full Name *</label>
+            <input type="text" name="fullname" required>
+
+            <label>Age *</label>
+            <input type="number" name="age" min="5" max="100" required>
+
+            <label>Email *</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number *</label>
+            <input type="text" name="phone" required>
+
+            <label>Address *</label>
+            <textarea name="address" rows="3" required></textarea>
+
+            <label>Membership Type *</label>
+            <select name="membership_type" required>
+                <option value="">-- Select --</option>
+                <option value="Student">Student (₹200/year)</option>
+                <option value="General">General (₹500/year)</option>
+                <option value="Senior Citizen">Senior Citizen (₹150/year)</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

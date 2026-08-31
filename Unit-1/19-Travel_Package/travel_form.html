@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Package Booking</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>✈️ Travel Package Booking</h1>
+
+        <?php if (isset($_GET['error'])): ?>
+            <p class="error"><?php echo htmlspecialchars($_GET['error']); ?></p>
+        <?php endif; ?>
+
+        <form action="process_booking.php" method="POST">
+            <label>Full Name *</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email *</label>
+            <input type="email" name="email" required>
+
+            <label>Phone *</label>
+            <input type="text" name="phone" required>
+
+            <label>Select Travel Package *</label>
+            <select name="package" required>
+                <option value="">-- Select Package --</option>
+                <option value="Kerala Backwaters|₹15,000|5 Days / 4 Nights">Kerala Backwaters (₹15,000 - 5D/4N)</option>
+                <option value="Goa Beach Escape|₹12,000|4 Days / 3 Nights">Goa Beach Escape (₹12,000 - 4D/3N)</option>
+                <option value="Himalayan Adventure|₹25,000|7 Days / 6 Nights">Himalayan Adventure (₹25,000 - 7D/6N)</option>
+                <option value="Rajasthan Heritage Tour|₹20,000|6 Days / 5 Nights">Rajasthan Heritage Tour (₹20,000 - 6D/5N)</option>
+            </select>
+
+            <label>Number of Travelers *</label>
+            <input type="number" name="travelers" min="1" value="1" required>
+
+            <label>Preferred Travel Date *</label>
+            <input type="date" name="travel_date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</body>
+</html>

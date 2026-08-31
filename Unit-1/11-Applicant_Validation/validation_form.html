@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applicant Validation System</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Applicant Validation System</h1>
+        <p class="subtitle">Enter your details to validate</p>
+
+        <form action="validate_applicant.php" method="POST">
+            <label>Email ID</label>
+            <input type="text" name="email" placeholder="example@mail.com">
+
+            <label>Password</label>
+            <input type="text" name="password" placeholder="Min 8 chars, 1 uppercase, 1 digit, 1 special char">
+
+            <label>Mobile Number</label>
+            <input type="text" name="mobile" placeholder="10-digit number">
+
+            <button type="submit">Validate</button>
+        </form>
+    </div>
+
+</body>
+</html>

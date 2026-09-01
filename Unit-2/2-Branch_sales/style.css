@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background-color: #fdf6ec; margin: 0; padding: 30px; color: #4a3f35; }
+    h1 { text-align: center; color: #a04000; }
+    .container { max-width: 900px; margin: auto auto 25px auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 10px; text-align: center; border: 1px solid #e5d5b8; }
+    th { background-color: #a04000; color: white; }
+    tr:nth-child(even) { background-color: #fbf0dd; }
+    h2 { color: #a04000; border-bottom: 2px solid #e5d5b8; padding-bottom: 5px; }
+    .highlight { font-weight: bold; color: #196f3d; }
+    .low { font-weight: bold; color: #c0392b; }

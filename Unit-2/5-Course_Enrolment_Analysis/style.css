@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background-color: #f4ecf7; margin: 0; padding: 30px; color: #4a235a; }
+    h1 { text-align: center; color: #6c3483; }
+    .container { max-width: 750px; margin: auto auto 25px auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 10px; text-align: center; border: 1px solid #e8daef; }
+    th { background-color: #6c3483; color: white; }
+    tr:nth-child(even) { background-color: #f4ecf7; }
+    .summary p { font-size: 15px; margin: 6px 0; }
+    .top { color: #6c3483; font-weight: bold; }

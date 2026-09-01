@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background-color: #eaf2f8; margin: 0; padding: 30px; color: #1b2631; }
+    h1 { text-align: center; color: #1a5276; }
+    .container { max-width: 800px; margin: auto auto 25px auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 10px; text-align: center; border: 1px solid #d6eaf8; }
+    th { background-color: #1a5276; color: white; }
+    tr:nth-child(even) { background-color: #eaf2f8; }
+    .summary p { font-size: 15px; margin: 6px 0; }
